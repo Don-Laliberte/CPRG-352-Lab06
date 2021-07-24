@@ -91,7 +91,7 @@ public class ShoppingListServlet extends HttpServlet {
         }
         
         //re forwards the page after all the logic is processed.
-        getServletContext().getRequestDispatcher("/WEB-INF/shoppingList.jsp").forward(request, response);
+        response.sendRedirect("ShoppingList");
         
         
     }
